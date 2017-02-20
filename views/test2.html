@@ -1,0 +1,54 @@
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-xs-12 text-center" id="top-bar">
+            <img src="../assets/img/lgburger.jpg" alt="burger" />
+            <h1> Eat-Da-Burger! </h1>
+        </div>
+        <br>
+        <div class="col-xs-6 text-center" class="task">
+            {{#each burgers}} {{#unless this.devoured}}
+            <div class="row">
+                <div class="col-xs-9 text-center">
+                    <h2>{{this.burger}}</h2>
+                </div>
+                <div class="col-xs-3 text-center">
+                    <form action="burgers/update/devour/{{this.id}}?_method=PUT" method="POST">
+                        <button class="btn btn-success" type="submit" style="float:right">DEVOUR IT!</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="break"> {{/unless}} {{/each}}
+        </div>
+        <div class="col-xs-6 text-center" class="task">
+            <h1> Devoured Burgers</h1> {{#each burgers}} {{#if this.devoured}}
+            <div class="row burgers">
+                <div class="col-xs-6 text-center">
+                    <h2>{{this.burger}}</h2>
+                </div>
+              
+        <div class="col-xs-6">
+  						<form action="burgers/delete/{{this.id}}?_method=DELETE " method="POST ">
+                  <button class="btn btn-danger btn-sm " type="submit ">DELETE!</button>
+                </form>
+              </div>
+            </div>
+  		 <hr class="break ">
+            {{/if}}
+          {{/each}}
+      </div>
+    </div>
+	<div class="row bottom ">
+	<h1> Add a Burger</h1>
+		<div class="col-xs-12 text-center enter_section ">
+			 <form class="form-inline " action="burgers/create " method="POST ">
+        <div class="form-group ">
+          <label for="ca "><h3>Burger Name:</h3></label>
+          <input type="text " id="ca " name="name " class="form-control " required>
+        </div>
+				<button type="submit " class="btn btn-primary " id="text-enter-button ">Submit</button>
+			</form>
+			<p>Enter a burger you want to eat Click the "Submit " button.</p>
+		</div>
+	</div>
+</div>
+ -->
